@@ -24,7 +24,7 @@ smotesampler=SMOTE()
 nmsampler=NearMiss()
 
 
-models = [ LogisticRegression(max_iter=1000, solver='newton-cg'), RandomForestClassifier(random_state=42), SVC(), XGBClassifier(), MLPClassifier(max_iter=1000, random_state=42)]
+models = [LogisticRegression(max_iter=1000, solver='newton-cg'), RandomForestClassifier(random_state=42), SVC(), XGBClassifier(), MLPClassifier(max_iter=1000, random_state=42)]
 
 sampling_methods = [oversampler, undersampler, tomeksampler, smotesampler, nmsampler]
 
